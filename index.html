@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manobhav | Handmade Home Décor & Gifts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #2b2b2b !important;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: #444 !important;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #a56c1f !important;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .btn-primary {
+      background-color: #a56c1f;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #8e5919;
+    }
+
+    /* Section spacing */
+    section {
+      padding: 80px 0;
+    }
+
+    /* About */
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    /* Products */
+    .product-card {
+      border: none;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Gallery */
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Testimonials */
+    .testimonial {
+      background-color: #fff8f0;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2b2b2b;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #a56c1f;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Manobhav</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Handcrafted Elegance for Your Home</h1>
+    <p>Discover unique handmade décor & gifts that bring warmth and style.</p>
+    <a href="#products" class="btn btn-primary btn-lg">Explore Collection</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">About Manobhav</h2>
+    <p>At <strong>Manobhav</strong>, we celebrate the art of handmade creation. Every décor piece tells a story of tradition, craftsmanship, and timeless beauty — designed to make your home feel truly special.</p>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Our Featured Creations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1598300056393-4a3f3f5c8c31?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Marble Dust Statue</h5>
+            <p class="card-text">Bring divine charm to your space with handcrafted marble dust art.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1598300055634-850b3c3f0f7a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Vintage Showpiece</h5>
+            <p class="card-text">Timeless craftsmanship that adds elegance to every corner.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1603899124180-51f63bd8f71b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Handmade Table Decor</h5>
+            <p class="card-text">Beautifully detailed décor pieces crafted with love and care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Gallery</h2>
+    <div class="row g-3 gallery">
+      <div class="col-md-4"><img src="https://images.unsplash.com/photo-1621242164032-ec0b20b9594f?auto=format&fit=crop&w=600&q=80" alt="Gallery 1"></div>
+      <div class="col-md-4"><img src="https://images.unsplash.com/photo-1600210492658-dfbdb2ef3c60?auto=format&fit=crop&w=600&q=80" alt="Gallery 2"></div>
+      <div class="col-md-4"><img src="https://images.unsplash.com/photo-1600210493070-9d8b1f7f3176?auto=format&fit=crop&w=600&q=80" alt="Gallery 3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">What Our Customers Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p>“The craftsmanship is stunning! My living room looks beautiful.”</p>
+          <strong>- Priya S.</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p>“Manobhav décor pieces bring warmth and peace to my space.”</p>
+          <strong>- Karan P.</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <p>“Loved the detailing and quality. Perfect gifts for my friends.”</p>
+          <strong>- Riya T.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Contact Us</h2>
+    <p>Want to collaborate or explore wholesale? Get in touch with us!</p>
+    <a href="mailto:info@manobhav.in" class="btn btn-primary mt-3">Email Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Manobhav. All rights reserved.</p>
+    <p>Follow us on <a href="#">Instagram</a> | <a href="#">Pinterest</a> | <a href="#">Facebook</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
